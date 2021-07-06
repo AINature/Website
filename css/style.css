@@ -698,10 +698,17 @@ footer .dariatech .content {
 }
 
 footer .dariatech .content .left {
-  width: 50%;
+  width: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-footer .dariatech .content .left .title {
+footer .dariatech .content .left .items {
+  margin-right: 24px;
+}
+
+footer .dariatech .content .left .items .title {
   font-weight: bold;
   font-size: 20px;
   text-align: left;
@@ -711,7 +718,7 @@ footer .dariatech .content .left .title {
   position: relative;
 }
 
-footer .dariatech .content .left .title::before {
+footer .dariatech .content .left .items .title::before {
   content: "";
   position: absolute;
   width: 64px;
@@ -723,7 +730,7 @@ footer .dariatech .content .left .title::before {
   bottom: 0;
 }
 
-footer .dariatech .content .left .title span {
+footer .dariatech .content .left .items .title span {
   width: 64px;
   height: 3px;
   border-radius: 1.5px;
@@ -731,17 +738,19 @@ footer .dariatech .content .left .title span {
   opacity: 0.34;
 }
 
-footer .dariatech .content .left .item {
+footer .dariatech .content .left .items .item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin-bottom: 30px;
 }
 
-footer .dariatech .content .left .item span {
+footer .dariatech .content .left .items .item span {
   font-weight: normal;
   font-size: 16px;
   color: #fff;
@@ -749,7 +758,7 @@ footer .dariatech .content .left .item span {
   margin-right: 8px;
 }
 
-footer .dariatech .content .left .item .desc {
+footer .dariatech .content .left .items .item .desc {
   font-weight: 600;
   font-size: 16px;
   color: #fff;
@@ -758,7 +767,7 @@ footer .dariatech .content .left .item .desc {
 }
 
 footer .dariatech .content .right {
-  width: 50%;
+  width: 30%;
 }
 
 footer .dariatech .content .right .title {
@@ -828,7 +837,7 @@ footer .dariatech .content .right .map__box iframe {
   z-index: 0;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 992px) {
   footer .dariatech .content {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -846,6 +855,15 @@ footer .dariatech .content .right .map__box iframe {
   }
   footer .dariatech .content .right .map__box iframe {
     width: 100%;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  footer .dariatech .content .left {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 
