@@ -1,0 +1,27 @@
+// @import "font_Raleway";
+@import "mixins";
+@import "variable";
+@import "index";
+// Font
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+$white: #fff;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  background: #fff;
+  direction: ltr;
+
+  a {
+    text-decoration: none;
+  }
+  ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+}
