@@ -1,10 +1,10 @@
 .top__page__bg {
   // display: none;
   width: 100%;
-  height: 850px;
+  // height: 850px;
   //   background-image: url(../img/content/index_top_bg.svg);
   //   background-position: 50% 50%;
-  //   background-repeat: no-repeat;
+    background-repeat: no-repeat;
   //   background-size: cover;
   // *********
   // background: radial-gradient(right,#005943  0%, #001126 70%);
@@ -167,6 +167,7 @@
   // margin-top: -170px;
   display: none;
 }
+
 .index__section__2 {
   padding-top: 60px;
 
@@ -203,7 +204,7 @@
         text-align: left;
         color: #9b9b9b;
         padding: 0;
-        margin-bottom: 40px;
+        margin-bottom: 24px;
       }
       .btn {
         display: flex;
@@ -417,7 +418,11 @@
       align-items: center;
       justify-content: flex-end;
       img {
-        height: 100%;
+        // height: 100%;
+        height: 200px;
+        @include mq(576){
+          height: 130px;
+        }
       }
     }
     @include mq(992) {
@@ -571,6 +576,7 @@ footer {
           width: 340px;
           height: 140px;
           transition: all 0.3s ease;
+          margin-bottom: 16px;
           &:hover {
             &::before {
               display: none;
@@ -598,6 +604,26 @@ footer {
             z-index: 0;
           }
         }
+        .item {
+          display: flex;
+          align-items: center;
+          flex-wrap: wrap;
+          margin-bottom: 30px;
+          span {
+            font-weight: normal;
+            font-size: 16px;
+            color: #fff;
+            opacity: 0.8;
+            margin-right: 8px;
+          }
+          .desc {
+            font-weight: 600;
+            font-size: 16px;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+          }
+        }
       }
       @include mq(992) {
         flex-direction: column;
@@ -614,8 +640,8 @@ footer {
           }
         }
       }
-      @include mq(576){
-        .left{
+      @include mq(576) {
+        .left {
           flex-direction: column;
         }
       }
@@ -637,6 +663,34 @@ footer {
         font-size: 14px;
         color: #fff;
         opacity: 0.66;
+      }
+    }
+  }
+}
+
+.modal{
+  .modal-dialog{
+    .modal-content{
+      .modal-header{
+        .modal-title{
+          img{
+            height: 32px;
+            margin-right: 8px;
+          }
+        }
+       
+      }
+      .modal-body{
+        font-size: 16px;
+        text-align: justify;
+        line-height: 32px;
+        font-weight: normal;
+      }
+      .modal-footer{
+
+        .close__btn{
+          background-color: #005943;
+        }
       }
     }
   }

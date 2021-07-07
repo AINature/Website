@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap");
 .top__page__bg {
   width: 100%;
-  height: 850px;
+  background-repeat: no-repeat;
   background-color: #001126;
   /* For browsers that do not support gradients */
   background-image: radial-gradient(closest-corner at 80% 65%, #005943, #001126);
@@ -285,7 +285,7 @@
   text-align: left;
   color: #9b9b9b;
   padding: 0;
-  margin-bottom: 40px;
+  margin-bottom: 24px;
 }
 
 .index__section__2 .dariatech .right .btn {
@@ -604,7 +604,13 @@
 }
 
 .index__section__4 .dariatech .left img {
-  height: 100%;
+  height: 200px;
+}
+
+@media only screen and (max-width: 576px) {
+  .index__section__4 .dariatech .left img {
+    height: 130px;
+  }
 }
 
 @media only screen and (max-width: 992px) {
@@ -807,6 +813,7 @@ footer .dariatech .content .right .map__box {
   height: 140px;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
+  margin-bottom: 16px;
 }
 
 footer .dariatech .content .right .map__box:hover::before {
@@ -835,6 +842,34 @@ footer .dariatech .content .right .map__box iframe {
   position: relative;
   overflow: hidden;
   z-index: 0;
+}
+
+footer .dariatech .content .right .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+footer .dariatech .content .right .item span {
+  font-weight: normal;
+  font-size: 16px;
+  color: #fff;
+  opacity: 0.8;
+  margin-right: 8px;
+}
+
+footer .dariatech .content .right .item .desc {
+  font-weight: 600;
+  font-size: 16px;
+  color: #fff;
+  margin: 0;
+  padding: 0;
 }
 
 @media only screen and (max-width: 992px) {
@@ -891,6 +926,22 @@ footer .dariatech .copy__right span {
   font-size: 14px;
   color: #fff;
   opacity: 0.66;
+}
+
+.modal .modal-dialog .modal-content .modal-header .modal-title img {
+  height: 32px;
+  margin-right: 8px;
+}
+
+.modal .modal-dialog .modal-content .modal-body {
+  font-size: 16px;
+  text-align: justify;
+  line-height: 32px;
+  font-weight: normal;
+}
+
+.modal .modal-dialog .modal-content .modal-footer .close__btn {
+  background-color: #005943;
 }
 
 html {
