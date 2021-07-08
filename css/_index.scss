@@ -4,7 +4,7 @@
   // height: 850px;
   //   background-image: url(../img/content/index_top_bg.svg);
   //   background-position: 50% 50%;
-    background-repeat: no-repeat;
+  background-repeat: no-repeat;
   //   background-size: cover;
   // *********
   // background: radial-gradient(right,#005943  0%, #001126 70%);
@@ -420,7 +420,7 @@
       img {
         // height: 100%;
         height: 200px;
-        @include mq(576){
+        @include mq(576) {
           height: 130px;
         }
       }
@@ -468,7 +468,8 @@ footer {
     align-items: center;
     justify-content: center;
     margin-bottom: -1px;
-    button {
+    button,
+    a {
       outline: unset;
       border: none;
       width: 38px;
@@ -658,7 +659,7 @@ footer {
           height: 45px;
         }
       }
-      span {
+      .dariatech__copyright {
         font-weight: normal;
         font-size: 14px;
         color: #fff;
@@ -668,27 +669,25 @@ footer {
   }
 }
 
-.modal{
-  .modal-dialog{
-    .modal-content{
-      .modal-header{
-        .modal-title{
-          img{
+.modal {
+  .modal-dialog {
+    .modal-content {
+      .modal-header {
+        .modal-title {
+          img {
             height: 32px;
             margin-right: 8px;
           }
         }
-       
       }
-      .modal-body{
+      .modal-body {
         font-size: 16px;
         text-align: justify;
         line-height: 32px;
         font-weight: normal;
       }
-      .modal-footer{
-
-        .close__btn{
+      .modal-footer {
+        .close__btn {
           background-color: #005943;
         }
       }
