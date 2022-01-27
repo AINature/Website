@@ -345,6 +345,8 @@
 
 .index__section__2 .dariatech .left img {
   height: 400px;
+  margin-top: -170px;
+  
 }
 
 @media only screen and (max-width: 576px) {
